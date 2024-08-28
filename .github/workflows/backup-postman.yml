@@ -38,3 +38,7 @@ jobs:
           git add collection_details/*.json
           git commit -m "Backup Postman Collection Details"
           git push
+      # 追蹤未追蹤的文件
+      - name: Add untracked files
+        run: |
+          git add collection_uids.txt collections.json
