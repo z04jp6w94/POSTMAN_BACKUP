@@ -36,6 +36,7 @@ jobs:
           git config --global user.email "z04jp6w944@gmail.com"
           git config --global user.name "z04jp6w94"
           git add collection_details/*.json
+          git add collection_uids.txt collections.json
           git commit -m "Backup Postman Collection Details"
           git push
       # 追蹤未追蹤的文件
@@ -43,7 +44,7 @@ jobs:
       #  run: |
       #    git add collection_uids.txt collections.json
 
-      - name: Add and commit all changes
-        run: |
-          git add -A
-          git commit -m "Backup Postman collections"
+      # - name: Add and commit all changes
+      #  run: |
+      #    git add -A
+      #    git commit -m "Backup Postman collections"
